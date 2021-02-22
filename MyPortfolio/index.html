@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="永野将人のポートフォリオです。よろしくお願い致します。">
+        <meta name="keywords" content="永野, 将人, 転職, ポートフォリオ, 独学,">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>MyPortfolio</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="messageTitle">My Portfolio</h1>
+            <p class="message__txt pc">
+                永野将人のポートフォリオです。<br>
+                開発言語については全て独学です。どうぞよろしくお願い致します。
+            </p>
+            <nav class="navMenu">
+                <ul class="navMenu__list pc">
+                    <li class="navMenu__listItem"><a href="#work">サイト制作実績</a></li>
+                    <li class="navMenu__listItem"><a href="#illust">イラスト制作実績</a></li>
+                    <li class="navMenu__listItem"><a href="#other">JavaScriptについて</a></li>
+                </ul>          
+                <div class="hambMenu">
+                    <span class="material-icons" id="navOpen">menu</span>
+                </div>
+            </nav>
+        </header>
+        <div class="overlay">
+            <span class="material-icons" id="navClose">close</span>
+            <nav>
+              <ul>
+                <li class="navMenu__listItem"><a href="#work">サイト制作実績</a></li>
+                <li class="navMenu__listItem"><a href="#illust">イラスト制作実績</a></li>
+                <li class="navMenu__listItem"><a href="#other">JavaScriptについて</a></li>
+              </ul>
+            </nav>
+          </div>
+        <main class="contentFixed">
+            <section class="work">
+                <div class="sectionHeading">
+                    <h2 class="sectionTitle" id="work">サイト制作実績</h2>
+                    <p>〜直近に制作したページのご紹介〜</p>
+                </div>
+                <h3 class="conentTitle sp">自社運用のECサイト制作</h3>
+                <div class="workSummary container">
+                    <a href="https://shizekura.net/" rel="noopener noreferrer" target="_blank">
+                        <img class="pc" src="img/work_summary.jpeg" alt="しぜんとくらそのサイトイメージ">
+                        <img class="sp" src="img/work_summary_sp.jpeg" alt="しぜんとくらそのサイトイメージ">
+                    </a>
+                    <div class="workSummary__txtBox">
+                        <h3 class="conentTitle pc">自社運用のECサイト制作</h3>
+                        <p class="workSummary__txt">
+                            ASPのショップサーブを利用しています。既製テーマの「Sホワイト」をカスタマイズを行いました。
+                        </p>
+                        <img src="img/work_themeList.jpeg" alt="ショップサーブのテーマ一覧">
+                        <p class="workSummary__txt">
+                            カスタマイズのプロジェクト自体は継続中で、現状のページもカスタマイズ途中のものです。<br>
+                            別プロジェクトの進行状況との兼ね合いで、保留になっています。
+                        </p>
+                        <p class="workSummary__txt">
+                            ちなみにコードを記述したのは
+                            HTMLの制作箇所はヘッダー部分からスライドショーまでで、その他のカスタマイズはCSSでテーマスタイルの上書きで対応しています。
+                            
+                        </p>
+                        <div id="open" class="btn">
+                            HTMLのソースコードはこちら
+                        </div>
+                        <div class="btn">
+                            <a href="https://shizekura.net/header/custom.css" rel="noopener noreferrer" target="_blank">
+                                CSSのソースコードはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal" class="hidden">
+                    &lt;div class=&quot;headerTop&quot;&gt;<br>
+                    &lt;div class=&quot;headerTop__container&quot;&gt;<br>
+                      &lt;p class=&quot;headerTop__txt&quot;&gt;「安心・安全な食」を届ける通販サイト　しぜんとくらそ（通称：しぜくら）&lt;/p&gt;<br>
+                      &lt;nav class=&quot;headerTop__Nav&quot;&gt;<br>
+                        &lt;ul class=&quot;headerTop__NavList&quot;&gt;<br>
+                          &lt;li class=&quot;headerTop__NavListItem01&quot;&gt;&lt;a href=&quot;/hpgen/HPB/shop/shoppinguide.html&quot;&gt;ご利用ガイド&lt;/a&gt;&lt;/li&gt;<br>
+                          &lt;li class=&quot;headerTop__NavListItem02&quot;&gt;&lt;a onclick=&quot;javascript:openPage('https://shizekura.net/CART/newmem.php'); return false;&quot; href=&quot;/_ga/newmen.php&quot; title=&quot;新規会員登録&quot;&gt;新規会員登録&lt;/a&gt;&lt;/li&gt;<br>
+                          &lt;li class=&quot;headerTop__NavListItem03&quot;&gt;&lt;a onClick=&quot;javascript:openPage('https://shizekura.net/CART/login.cgi','mypage'); return false;&quot; href=&quot;/_ga/login.cgi&quot; title=&quot;マイページログイン&quot;&gt;マイページログイン&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                      &lt;/nav&gt;<br>
+                    &lt;/div&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;div class=&quot;headerInfo&quot;&gt;<br>
+                    &lt;a class=&quot;headerInfo__logo&quot; href=&quot;/&quot;&gt;&lt;img class=&quot;headerInfo__cardInfo&quot; src=&quot;https://shizekura.net/header/img/headerInfo_logo.jpg&quot; alt=&quot;安心・安全の食をお届けします。しぜんとくらそ&quot;&gt;&lt;/a&gt;<br>
+                    &lt;div class=&quot;headerInfo__container&quot;&gt;<br>
+                      &lt;img src=&quot;https://shizekura.net/header/img/headerInfo_card.png&quot; alt=&quot;採れたて産直。毎週火・土にお届け&quot; &gt;<br>
+                      &lt;a class=&quot;headerInfo__checkCartBtn&quot; onClick=&quot;javascript:goCart();return false;&quot; href=&quot;/_ga/cart.php&quot; title=&quot;カートをみる&quot; &gt;カートを見る&lt;/a&gt;<br>
+                    &lt;/div&gt;<br>
+                  &lt;/div&gt;<br>
+                            &lt;div class=&quot;headerNav&quot;&gt;<br>
+                    &lt;nav class=&quot;gnav&quot;&gt;<br>
+                      &lt;ul class=&quot;gnav__list&quot;&gt;<br>
+                        &lt;li class=&quot;gnav__listItem01&quot;&gt;&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;https://shizekura.net/header/img/gnav_homeIcon.png&quot; alt=&quot;ホーム&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li class=&quot;gnav__listItem02&quot;&gt;&lt;a href=&quot;/SHOP/314384/list.html&quot;&gt;商品一覧&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li class=&quot;gnav__listItem03&quot;&gt;&lt;a href=&quot;/hpgen/HPB/categories/25575.html&quot;&gt;農場と店舗の紹介&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li class=&quot;gnav__listItem04&quot;&gt;&lt;a href=&quot;/hpgen/HPB/shop/shoppinguide.html&quot;&gt;ご利用案内&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li class=&quot;gnav__listItem05&quot;&gt;&lt;a href=&quot;/hpgen/HPB/entries/9.html&quot;&gt;よくある質問&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li class=&quot;gnav__listItem06&quot;&gt;&lt;a href=&quot;/hpgen/HPB/entries/13.html&quot;&gt;しぜくらポイント&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li class=&quot;gnav__listItem07&quot;&gt;&lt;a onClick=&quot;javascript:openPage('https://shizekura.net/FORM/contact.cgi','form'); return false;&quot; href=&quot;/_ga/FORM/contact.cgi&quot; title=&quot;お問い合せ&quot;&gt;お問い合せ&lt;/a&gt;&lt;/li&gt;<br>
+                      &lt;/ul&gt;<br>
+                    &lt;/nav&gt;<br>
+                  &lt;/div&gt;<br>
+                &lt;ul class=&quot;slider remove-slider&quot;&gt;<br>
+                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/349737/list.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv07_pc.jpg&quot; alt=&quot;会えない今だからこそ、感謝を届けたい！しぜくらのバレンタイン2021&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
+                  &lt;li&gt;&lt;a href=&quot;/hpgen/HPB/entries/13.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv06_pc.jpg&quot; alt=&quot;しぜくらポイントはじめました&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
+                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/346542/list.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv04_pc.jpg&quot; alt=&quot;しぜくら冬の贈り物2020ご用意しました！&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
+                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/346702/list.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv05_pc.jpg&quot; alt=&quot;冬の野菜特集&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
+                  &lt;li&gt;&lt;a href=&quot;https://beset-plaza.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv01_pc.jpg&quot; alt=&quot;固定種・在来種・無農薬野菜と「安心・安全」を見定めた食品をまとめました&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
+                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/yoyaku-ryu-sweetpotato2020.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv02_pc.jpg&quot; alt=&quot;茨城県龍ケ崎市自社農園のさつまいも三姉妹4kg3,500円（税込み）&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
+              　&lt;/ul&gt;<br>
+                    <div class="btn" id="close">
+                        閉じる
+                    </div>
+                </div>
+                <div id="mask" class="hidden"></div>
+            </section>
+            <section class="illust">
+                <div class="sectionHeading">
+                    <h2 class="sectionTitle" id="illust">イラスト制作実績</h2>
+                    <p>〜Webサイト用のイラスト〜</p>
+                </div>
+                <h3 class="conentTitle sp">LPのイラストを一部担当</h3>
+                <div class="illustSummary container">
+                    <div class="illustSummary__txtBox">
+                        <h3 class="conentTitle pc">LPのイラストを一部担当</h3>
+                        <p class="illustSummary__txt">
+                            応募した職種はエンジニアですが、AdobeのIllustratorやPhotoshopを使用してのイラスト制作も可能です。ランディングページのイラストの一部を制作しました。
+                        </p>
+                        <p class="illustSummary__txt">
+                            ※サイト自体は外部業者の制作です。
+                        </p>
+                        <img src="img/sample04.jpeg" alt="">
+                        <div class="btn">
+                            <a href="illust.html" rel="noopener noreferrer" target="_blank">制作したイラスト一覧はこちら</a>
+                        </div>
+                    </div>
+                    <a href="https://baribari.313599.net/" rel="noopener noreferrer" target="_blank">
+                        <img src="img/illust_summary.jpeg" alt="発電バリバリくんのサイトイメージ">
+                    </a>
+                </div>
+            </section>
+            <section class="other">
+                <div class="sectionHeading">
+                    <h2 class="sectionTitle" id="other">JavaScriptについて</h2>
+                    <p>〜独学の一環でアプリケーションを制作〜</p>   
+                </div>
+                <div class="other__txtBox">
+                    <p class="other__txt">実務ではJavaScript実装の経験が多くありませんが、独学で学習しております。</p>
+                    <p class="other__txt">技術レベルにつきましては、こちらのポートフォリオと、学習の過程で制作した下記のアプリケーションをご確認頂ければ幸いです。</p>
+                </div>
+                <div class="other__appList">
+                    <div class="container">
+                        <div class="other__appListItem">
+                            <a href="Application/MyCalendar/index.html" rel="noopener noreferrer" target="_blank">カレンダー</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Application/MyOmikuji/index.html" rel="noopener noreferrer" target="_blank">おみくじ</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Application/MyQuiz/index.html" rel="noopener noreferrer" target="_blank">3択クイズ</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Application/MySlotMachine/index.html" rel="noopener noreferrer" target="_blank">スロットマシン</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Application/MyStopwatch/indx.html" rel="noopener noreferrer" target="_blank">ストップウォッチ</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Application/MyTypingGame/index.html" rel="noopener noreferrer" target="_blank">タイピングゲーム</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Copyright © 2021 Nagano Masato All rights not reserved.</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
